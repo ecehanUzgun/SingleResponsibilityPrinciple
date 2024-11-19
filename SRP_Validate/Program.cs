@@ -12,7 +12,7 @@
 
             EmailService emailService = new EmailService();
             emailService.SendOrderConfirmationEmail();
-
+                
             InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
             invoiceGenerator.GenerateInvoice();
         }
