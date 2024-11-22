@@ -4,17 +4,14 @@
     {
         static void Main(string[] args)
         {
-            OrderCalculator calculator = new OrderCalculator();
-            calculator.CalculateOrderTotal();
-
             Order order = new Order();
-            order.PlaceOrder();
-
+            OrderCalculator orderCalculator = new OrderCalculator();
             EmailService emailService = new EmailService();
-            emailService.SendOrderConfirmationEmail();
-                
             InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
-            invoiceGenerator.GenerateInvoice();
+
+            OrderService orderService = new OrderService(orderCalculator, order, emailService, invoiceGenerator);
+
+            orderService.ProcessOrder();
         }
     }
 }

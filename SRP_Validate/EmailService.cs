@@ -4,7 +4,7 @@
     {
         public void SendOrderConfirmationEmail()
         {
-            // Sipariş onay e-postası gönderme mantığı
+            // Sipariş bilgi e-postası gönderme mantığı
 
             Console.WriteLine("Sipariş bilgileriniz kayıtlı mail adresinize gönderildi.");
         }

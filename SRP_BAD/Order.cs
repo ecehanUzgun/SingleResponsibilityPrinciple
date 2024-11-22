@@ -14,7 +14,7 @@
 
         public void SendOrderConfirmationEmail()
         {
-            // Siparişin onaylandığını bildiren e-postayı gönderme işlemi
+            // Sipariş bilgi e-postası gönderme işlemi
         }
 
         public void GenerateInvoice()
